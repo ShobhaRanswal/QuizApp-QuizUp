@@ -1,0 +1,401 @@
+/* Background and main container color */
+body {
+    background-color: #f0f4f8;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog title color */
+.blog-title {
+  font-size: 2.5rem;
+  color: #343a40;
+  font-weight: bold;
+}
+
+/* Styling for the blog information section */
+.blog-info {
+  color: #6c757d;
+}
+
+.blog-author sub,
+.blog-published sub,
+.blog-updated sub {
+  color: #495057;
+  font-weight: bold;
+}
+
+/* Link color */
+.author-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.author-link:hover {
+  color: #0056b3;
+}
+
+/* Timestamp color */
+.time-since {
+  color: #6c757d;
+}
+
+/* Blog post content styling */
+.blog-post-content {
+  padding: 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  color: #212529;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .blog-title {
+      font-size: 1.8rem;
+  }
+
+  .blog-info {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
+
+
+/* Confirmation box styling */
+.confirmation-box {
+  background-color: #ffffff;  /* White background for the box */
+  border-radius: 8px;         /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);  /* Soft shadow for 3D effect */
+  padding: 30px;              /* Inner padding */
+  margin: 40px auto;          /* Centering with margin */
+  max-width: 600px;           /* Maximum width of the box */
+  animation: fadeIn 0.5s ease-in; /* Fade-in effect on load */
+}
+
+/* Title styling */
+.title-highlight {
+  color: #2a9df4; /* Primary Blue */
+  text-transform: uppercase; /* Uppercase letters for the title */
+}
+
+/* Form styling */
+.confirmation-form {
+  text-align: center; /* Center form content */
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;            /* Flexbox for button layout */
+  justify-content: center;  /* Center buttons */
+  gap: 15px;               /* Space between buttons */
+  margin-top: 20px;       /* Margin on top of button group */
+}
+
+/* Button styling */
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
+}
+
+/* Button hover effects */
+.btn:hover {
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Danger button specific hover effects */
+.confirm-button:hover {
+  background-color: #d9534f; /* Change to a darker red on hover */
+  color: #ffffff;             /* Ensure text remains white */
+}
+
+/* Success button specific hover effects */
+.back-button:hover {
+  background-color: #5cb85c; /* Change to a darker green on hover */
+  color: #ffffff;             /* Ensure text remains white */
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start slightly above */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .confirmation-box {
+      padding: 20px;           /* Adjust padding for smaller screens */
+      margin: 20px;            /* Reduce margin for smaller screens */
+  }
+
+  .btn {
+      width: 100%;             /* Full width for buttons on smaller screens */
+      margin: 5px 0;          /* Space between buttons */
+  }
+}
+/* About Us Page Styles */
+.about-container {
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 8px;        /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for a 3D effect */
+  padding: 30px;             /* Inner padding */
+  margin: 40px auto;         /* Centering with margin */
+  animation: fadeIn 0.5s ease-in; /* Fade-in effect on load */
+}
+
+/* Section Title Styling */
+.section-title {
+  color: #2a9df4; /* Primary Blue */
+  margin-top: 20px; /* Top margin for spacing */
+}
+
+/* Section Text Styling */
+.section-text {
+  color: #333; /* Darker text color for better readability */
+  line-height: 1.6; /* Improve line spacing */
+  margin-bottom: 20px; /* Margin below paragraphs */
+}
+
+/* List Styling */
+.how-it-works-list {
+  list-style-type: disc; /* Bulleted list style */
+  padding-left: 20px;    /* Indentation for list items */
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start slightly above */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container {
+      padding: 20px; /* Adjust padding for smaller screens */
+      margin: 20px;  /* Reduce margin for smaller screens */
+  }
+}
+/* About Us Page Styles */
+.about-container {
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 8px;        /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for a 3D effect */
+  padding: 30px;             /* Inner padding */
+  margin: 40px auto;         /* Centering with margin */
+  animation: fadeIn 0.5s ease-in; /* Fade-in effect on load */
+}
+
+/* Section Title Styling */
+.section-title {
+  color: #2a9df4; /* Primary Blue */
+  margin-top: 20px; /* Top margin for spacing */
+}
+
+/* Section Text Styling */
+.section-text {
+  color: #333; /* Darker text color for better readability */
+  line-height: 1.6; /* Improve line spacing */
+  margin-bottom: 20px; /* Margin below paragraphs */
+}
+
+/* List Styling */
+.how-it-works-list {
+  list-style-type: disc; /* Bulleted list style */
+  padding-left: 20px;    /* Indentation for list items */
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start slightly above */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container {
+      padding: 20px; /* Adjust padding for smaller screens */
+      margin: 20px;  /* Reduce margin for smaller screens */
+  }
+}
+/* All Quizzes Page Styles */
+.container {
+  margin-top: 20px; /* Add some space above the container */
+}
+
+/* Button Styles */
+.btn-light {
+  background-color: #f8f9fa; /* Light background for the button */
+  border: 1px solid #ced4da; /* Subtle border */
+}
+
+/* Card Styles */
+.card {
+  transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Title Style */
+h1.display-4 {
+  color: #2a9df4; /* Primary color for the main title */
+}
+
+/* Search Button Style */
+.btn-primary {
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none; /* Remove default border */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .btn-group {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+  }
+}
+/* Terms & Conditions Styles */
+.terms-block {
+  background-color: #f8f9fa; /* Light background color for the block */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space below the block */
+}
+
+/* Heading styles */
+.terms-block h2 {
+  color: #2a9df4; /* Change heading color to match theme */
+  margin-top: 20px; /* Space above each heading */
+}
+
+/* Paragraph styles */
+.terms-block p {
+  line-height: 1.6; /* Improved line spacing for readability */
+  margin-bottom: 15px; /* Space below paragraphs */
+}
+/* Blogs Styles */
+.blogs-block {
+  background-color: #f8f9fa; /* Light background color for the block */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space below the block */
+}
+
+/* Heading styles */
+.blogs-block h3 {
+  color: #2a9df4; /* Change heading color to match theme */
+  margin-top: 20px; /* Space above each heading */
+}
+
+/* List styles */
+.blogs-block ul {
+  padding-left: 0; /* Remove default padding */
+}
+
+/* List item styles */
+.blogs-block li {
+  padding: 10px; /* Padding for list items */
+  background-color: #ffffff; /* White background for list items */
+  border: 1px solid #e0e0e0; /* Light border for each item */
+  border-radius: 5px; /* Rounded corners for list items */
+}
+
+/* Link styles */
+.blogs-block li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #007bff; /* Link color */
+}
+
+/* Hover effect for links */
+.blogs-block li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Date styles */
+.blogs-block .text-secondary {
+  font-size: 0.9rem; /* Smaller font size for dates */
+}
+/* Downloads Styles */
+.downloads-block {
+  background-color: #f8f9fa; /* Light background color for the block */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space below the block */
+}
+
+/* Heading styles */
+.downloads-block h2 {
+  color: #2a9df4; /* Change heading color to match theme */
+  margin-top: 15px; /* Space above each heading */
+}
+
+/* Paragraph styles */
+.downloads-block p {
+  font-size: 0.95rem; /* Slightly smaller font size for text */
+  color: #555; /* Darker text color for readability */
+}
+
+/* Button styles */
+.downloads-block .btn {
+  margin-top: 10px; /* Space above buttons */
+  padding: 10px 20px; /* Padding for buttons */
+}
+
+/* Divider styles */
+.downloads-block hr {
+  border-top: 1px solid #e0e0e0; /* Light divider color */
+}
+
+
+
+/* static/css/add_blog.css */
+
+.add-blog-container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light grey background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.add-blog-header {
+  margin-bottom: 20px; /* Space below the header */
+  color: #333; /* Darker color for header */
+}
+
+
+
+.form-group {
+  margin-bottom: 15px; /* Space between form groups */
+}
