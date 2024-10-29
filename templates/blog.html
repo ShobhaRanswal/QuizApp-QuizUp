@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+{% block title %}{{blog.title}} - QuizUp{% endblock title %}
+
+{% block content %}
+
+<h1 class="display-4 text-center my-5 blog-title">{{blog.title|title}}</h1>
+
+<main class="blog-main">
+    <div class="container blog-container">
+        <div class="d-flex justify-content-between blog-info">
+            <div class="blog-author">
+                <sub>Author</sub><br>
+                <a href="{% url 'profile' blog.author.username %}" class="author-link">@{{blog.author.username}}</a>
+            </div>
+            <div class="blog-published">
+                <sub>Published</sub><br>
+                <span class="time-since">{{blog.created_at|timesince}} ago</span>
+            </div>
+            <div class="blog-updated">
+                <sub>Updated</sub><br>
+                <span class="time-since">{{blog.updated_at|timesince}} ago</span>
+            </div>
+        </div>
+        <article class="blog-post-content">
+            {{blog.content|safe}}
+        </article>
+    </div>
+</main>
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+<!-- confirm_delete.html -->
+{% extends 'index.html' %}
+
+{% block title %}Confirm Delete - QuizUp{% endblock title %}
+
+{% block content %}
+<h1 class="display-4 text-center my-5">Confirm Delete</h1>
+
+<div class="container text-center">
+    <p>Are you sure you want to delete the blog "{{ blog.title }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Confirm Delete</button>
+    </form>
+    <a href="{% url 'blog_list' %}" class="btn btn-secondary mt-3">Cancel</a>
+</div>
+{% endblock content %}

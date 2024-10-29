@@ -1,0 +1,49 @@
+{% extends 'index.html' %}
+
+{% comment %} {% load custom_filters %} {% endcomment %}
+
+{% block title %}Result for {{submission.quiz.title}} - QuizUp{% endblock title %}
+
+{% block content %}
+
+    <style>
+        .result-card {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .result-card .card-body {
+            padding: 1.5rem;
+        }
+        
+        .questions {
+            user-select: none;
+        }
+    </style>
+
+    <div class="container my-5">
+
+        <div class="result-card">
+            <div class="card shadow">
+                <div class="card-header text-center bg-primary text-white">
+                    <h5>Quiz Result Summary</h5>
+                </div>
+                <div class="card-body">
+                    <p><strong>Name:</strong> {{ submission.user.profile.full_name }}</p>
+                    <hr>
+                    <p><strong>Quiz:</strong> {{ submission.quiz.title|title }}</p>
+                    <p><strong>Total Questions:</strong> {{ submission.quiz.question_set.count }}</p>
+                    <p><strong>Total Correct Answers:</strong> {{ submission.score }}</p>
+                    <p><strong>Total Marks:</strong> {{ submission.score }} / {{ submission.quiz.question_set.count }}</p>
+                    <p><strong>Submit at:</strong> {{ submission.submitted_at|timesince }} ago</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="{% url 'all_quiz' %}" class="btn btn-primary">All Quiz</a>
+                    <a href="{% url 'quiz' submission.quiz.id %}" class="btn btn-primary">Retake</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock content %}

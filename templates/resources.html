@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% block title %}Resources - QuizUp{% endblock title %}
+
+{% block content %}
+<h1 class="display-4 text-center my-5">Resources</h1>
+
+<main>
+    <div class="container col-md-8 col-sm-12">
+        <div class="p-4 shadow-sm rounded">
+            {% for resource in resources %}
+            <div class="download-item mb-4">
+                <h2>{{ resource.title }}</h2>
+                <p>{{ resource.description }}</p>
+                <a href="{{ resource.file.url }}" class="btn btn-success" target="_blank" rel="noopener noreferrer">View </a>
+                <hr>
+            </div>
+            {% empty %}
+            <p class="text-danger">No resources available.</p>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+
+{% endblock content %}
