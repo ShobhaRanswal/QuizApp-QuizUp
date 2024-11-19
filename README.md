@@ -1,4 +1,4 @@
-##QuizUp
+## QuizUp
 A web-based Quiz System developed using Django that allows users to participate in quizzes, track their progress, and view leaderboards. This project includes user registration and login, a dashboard, quizzes, leaderboards, a blog page, and more.
 
 ## Features
