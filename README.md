@@ -18,6 +18,7 @@ A web-based Quiz System developed using Django that allows users to participate 
 ## Installation
 
 To set up this project locally, follow these steps:
+_First of all create virtual env_
 
 1. Clone the repository:
 
@@ -28,7 +29,7 @@ To set up this project locally, follow these steps:
 2. Navigate to the project directory:
 
     ```bash
-    cd quiz-system
+    cd QuizUp
     ```
 
 3. Install dependencies:
